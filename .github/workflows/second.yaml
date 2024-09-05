@@ -1,0 +1,8 @@
+name: Second Workflow
+on: issue
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show events data
+        run: echo "${{ toJson(github) }}"
